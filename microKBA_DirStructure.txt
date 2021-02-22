@@ -1,0 +1,39 @@
+microKBA/Data
+│   
+├───Events		data of events, generated using 'Process/Kinesin track analyzer' option of 'Single Molecule Biophysics' ImageJ plug-in 
+│   │			(s_m_b.jar available on figshare  http://www.doi.org/10.6084/m9.figshare.14071382)
+│   │
+│   ├───Events_byRegion_All       	 	   all events data, split by experiment and tracking region        	     
+│   ├───Events_byRegion_Sel       	 	   selected/filtered events, split by experiment and tracking region        	   
+│   ├───Events_byExp_PlusMSDy       	 	   event data with appended mean square displacement in y (see Force Estimation), split by experiment 
+│   ├───Events_byExp_PlusForce      	 	   event data with appended force (see Force Estimation), split by experiment 
+│   └───Events_byExp_compiled         	           event data with appended force (see Force Estimation), compiled into one file
+│
+├───PeakCount	count of all detected peaks in the consecutive frames of the image sequence, 
+│ 		used to identify when the ATP arrives to the flow cells and motility of motors 
+│ 	        starts (and detachment rate increases), 
+│   		executed using ‘Process/Peak Finder’ option in the Single Molecule Biophysics plug-in (s_m_b.jar) in ImageJ
+│
+└───Traces	each folder contains tracking results generated with ‘Process/Fast Fitter Tracker v2’ option of 
+		'Single Molecule Biophysics' ImageJ plug-in, filtered for standard deviation in y, separated by tracking regions,
+		as well as start/end times marking the trajectory part used for beads fluctuation analysis
+    
+
+microKBA/Figure Plotting
+│
+└───Contains MatLab scripts that generate manuscript figures from /Data
+
+
+microKBA/Figures
+│
+└───Contains results of /Figure Plotting and images used for figures
+
+
+microKBA/Force Estimation
+│
+└───Contains scripts that execute force estimation for each experiment, starting with estimating mean square displacement in y
+
+microKBA/Localisation precision
+│
+└───Contains data and script necessary to compute localisation precision from traces of stuck beads
+
