@@ -1,0 +1,3 @@
+Frame size 
+291 x 160 pixels
+465.6 x 256 um
