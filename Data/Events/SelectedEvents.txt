@@ -1,0 +1,5 @@
+Selected means
+Interaction time >=0.75 s (ie minimum of 3 frames)
+Interaction time < 10s 
+Start time >= detachment start (specified based on accelerated peak count decrease and specified in each file name)
+
